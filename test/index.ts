@@ -1,3 +1,3 @@
 import test from 'ava'
 
-test.todo("don't forget to write tests :)")
+test.todo('check valid hex values')

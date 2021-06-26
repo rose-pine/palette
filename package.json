@@ -1,20 +1,21 @@
 {
-	"name": "node-esm-with-typescript",
+	"name": "@rose-pine/palette",
 	"version": "0.0.0",
-	"description": "Package template for using node esm with typescript",
+	"description": "Color palette tool for Rosé Pine",
 	"license": "MIT",
-	"repository": "mvllow/node-esm-with-typescript",
-	"funding": "https://github.com/mvllow/node-esm-with-typescript?sponsor=1",
+	"repository": "rose-pine/palette",
+	"funding": "https://github.com/rose-pine/palette?sponsor=1",
 	"author": {
-		"name": "mvllow",
-		"email": "mvllow@icloud.com"
+		"name": "Rosé Pine",
+		"email": "rose@mellow.dev"
 	},
 	"type": "module",
 	"exports": "./dist/source/index.js",
 	"engines": {
-		"node": "^12.20.0 || ^14.13.1 || >=16.0.0"
+		"node": ">=12"
 	},
 	"scripts": {
+		"dev": "node --loader=ts-node/esm source/index.ts",
 		"test": "ava",
 		"release": "np",
 		"build": "del-cli dist && tsc",
@@ -24,7 +25,12 @@
 		"dist/source"
 	],
 	"types": "dist/source",
-	"keywords": [],
+	"keywords": [
+		"theme",
+		"palette",
+		"soho-vibes",
+		"rose-pine"
+	],
 	"devDependencies": {
 		"@types/node": "^15.12.2",
 		"ava": "^3.15.0",
