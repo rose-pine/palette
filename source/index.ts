@@ -138,4 +138,4 @@ const palette = {
 }
 
 export default palette
-export { palette }
+export { palette, colorsByRole, colorsByVariant }
