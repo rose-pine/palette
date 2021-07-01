@@ -1,3 +1,39 @@
+const transparentHighlightsByRole = {
+	highlight: {
+		core: '#6e6a8633',
+		moon: '#817c9c26',
+		dawn: '#6e6a8614',
+	},
+	highlightInactive: {
+		core: '#6e6a861a',
+		moon: '#817c9c14',
+		dawn: '#6e6a860d',
+	},
+	highlightOverlay: {
+		core: '#6e6a8666',
+		moon: '#817c9c4d',
+		dawn: '#6e6a8626',
+	},
+}
+
+const transparentHighlightsByVariant = {
+	core: {
+		highlight: '#6e6a8633',
+		highlightInactive: '#6e6a861a',
+		highlightOverlay: '#6e6a8666',
+	},
+	moon: {
+		highlight: '#817c9c26',
+		highlightInactive: '#817c9c14',
+		highlightOverlay: '#817c9c4d',
+	},
+	dawn: {
+		highlight: '#6e6a8614',
+		highlightInactive: '#6e6a860d',
+		highlightOverlay: '#6e6a8626',
+	},
+}
+
 const colorsByRole = {
 	base: {
 		core: '#191724',
@@ -138,4 +174,10 @@ const palette = {
 }
 
 export default palette
-export { palette, colorsByRole, colorsByVariant }
+export {
+	palette,
+	colorsByRole,
+	colorsByVariant,
+	transparentHighlightsByRole,
+	transparentHighlightsByVariant,
+}
