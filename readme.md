@@ -43,4 +43,4 @@ palette.overlay
 
 ## Available Values
 
-For variants, roles, and color swatches, please see Rosé Pine's [official palette resource](https://github.com/rose-pine/rose-pine-theme/blob/main/palette.md).
+For variants, roles, and color swatches, please see Rosé Pine's [official palette resource](https://rosepinetheme.com/palette).
