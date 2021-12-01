@@ -10,7 +10,7 @@
 		"email": "rose@mellow.dev"
 	},
 	"type": "module",
-	"exports": "./dist/source/index.js",
+	"exports": "./dist/index.js",
 	"engines": {
 		"node": ">=12"
 	},
@@ -22,9 +22,9 @@
 		"prepare": "npm run build"
 	},
 	"files": [
-		"dist/source"
+		"dist"
 	],
-	"types": "dist/source",
+	"types": "dist",
 	"keywords": [
 		"theme",
 		"palette",
@@ -36,6 +36,7 @@
 	},
 	"devDependencies": {
 		"@types/node": "^15.12.2",
+		"@mvllow/tsconfig": "^0.1.0",
 		"ava": "^3.15.0",
 		"del-cli": "^3.0.1",
 		"np": "^7.5.0",
