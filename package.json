@@ -15,10 +15,9 @@
 		"node": ">=12"
 	},
 	"scripts": {
-		"dev": "node --loader=ts-node/esm source/index.ts",
-		"test": "ava",
+		"build": "del-cli dist && tsc && npm test",
+		"test": "xo && ava",
 		"release": "np",
-		"build": "del-cli dist && tsc",
 		"prepare": "npm run build"
 	},
 	"files": [
@@ -43,16 +42,19 @@
 		"prettier": "^2.5.0",
 		"ts-node": "^10.4.0",
 		"typescript": "^4.5.2",
+		"xo": "^0.47.0"
 	},
 	"prettier": {
+		"bracketSpacing": false,
 		"semi": false,
 		"singleQuote": true,
+		"trailingComma": "es5",
 		"useTabs": true
 	},
+	"xo": {
+		"prettier": true
+	},
 	"ava": {
-		"files": [
-			"test/*"
-		],
 		"extensions": {
 			"ts": "module"
 		},
