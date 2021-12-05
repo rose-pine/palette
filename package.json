@@ -25,6 +25,7 @@
 	],
 	"types": "dist",
 	"keywords": [
+		"colors",
 		"theme",
 		"palette",
 		"soho-vibes",
@@ -32,6 +33,10 @@
 	],
 	"publishConfig": {
 		"access": "public"
+	},
+	"dependencies": {
+		"colorish": "^0.2.1",
+		"hex-rgb": "^5.0.0"
 	},
 	"devDependencies": {
 		"@mvllow/tsconfig": "^0.1.0",
