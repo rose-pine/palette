@@ -13,7 +13,7 @@
 
 > Color palette tool for Rosé Pine
 
-This package allows for easy import of the colors in the official Rosé Pine palette. All color values are referenced in a standard 6-character hex format.
+This package allows for easy import of the colors in the official Rosé Pine palette.
 
 ## Install
 
