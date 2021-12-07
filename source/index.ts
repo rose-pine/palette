@@ -1,183 +1,407 @@
-const transparentHighlightsByRole = {
-	highlight: {
-		dark: '#6e6a8633',
-		moon: '#817c9c26',
-		dawn: '#6e6a8614',
-	},
-	highlightInactive: {
-		dark: '#6e6a861a',
-		moon: '#817c9c14',
-		dawn: '#6e6a860d',
-	},
-	highlightOverlay: {
-		dark: '#6e6a8666',
-		moon: '#817c9c4d',
-		dawn: '#6e6a8626',
-	},
-}
+import colorish from 'colorish'
 
-const transparentHighlightsByVariant = {
-	dark: {
-		highlight: '#6e6a8633',
-		highlightInactive: '#6e6a861a',
-		highlightOverlay: '#6e6a8666',
-	},
-	moon: {
-		highlight: '#817c9c26',
-		highlightInactive: '#817c9c14',
-		highlightOverlay: '#817c9c4d',
-	},
-	dawn: {
-		highlight: '#6e6a8614',
-		highlightInactive: '#6e6a860d',
-		highlightOverlay: '#6e6a8626',
-	},
-}
-
-const colorsByRole = {
+const main = {
 	base: {
-		dark: '#191724',
-		moon: '#232136',
-		dawn: '#faf4ed',
+		hex: '#191724',
+		rgba: 'rgba(25, 23, 36, 1)',
+		hsla: 'hsla(249, 22%, 12%, 1)',
 	},
 	surface: {
-		dark: '#1f1d2e',
-		moon: '#2a273f',
-		dawn: '#fffaf3',
+		hex: '#1f1d2e',
+		rgba: 'rgba(31, 29, 46, 1)',
+		hsla: 'hsla(247, 23%, 15%, 1)',
 	},
 	overlay: {
-		dark: '#26233a',
-		moon: '#393552',
-		dawn: '#f2e9de',
+		hex: '#26233a',
+		rgba: 'rgba(38, 35, 58, 1)',
+		hsla: 'hsla(248, 25%, 18%, 1)',
 	},
-	inactive: {
-		dark: '#6e6a86',
-		moon: '#6e6a86',
-		dawn: '#9893a5',
+	muted: {
+		hex: '#6e6a86',
+		rgba: 'rgba(110, 106, 134, 1)',
+		hsla: 'hsla(249, 12%, 47%, 1)',
 	},
 	subtle: {
-		dark: '#908caa',
-		moon: '#908caa',
-		dawn: '#6e6a86',
+		hex: '#908caa',
+		rgba: 'rgba(144, 140, 170, 1)',
+		hsla: 'hsla(248, 15%, 61%, 1)',
 	},
 	text: {
-		dark: '#e0def4',
-		moon: '#e0def4',
-		dawn: '#575279',
+		hex: '#e0def4',
+		rgba: 'rgba(224, 222, 244, 1)',
+		hsla: 'hsla(245, 50%, 91%, 1)',
 	},
 	love: {
-		dark: '#eb6f92',
-		moon: '#eb6f92',
-		dawn: '#b4637a',
+		hex: '#eb6f92',
+		rgba: 'rgba(235, 111, 146, 1)',
+		hsla: 'hsla(343, 76%, 68%, 1)',
 	},
 	gold: {
-		dark: '#f6c177',
-		moon: '#f6c177',
-		dawn: '#ea9d34',
+		hex: '#f6c177',
+		rgba: 'rgba(246, 193, 119, 1)',
+		hsla: 'hsla(35, 88%, 72%, 1)',
 	},
 	rose: {
-		dark: '#ebbcba',
-		moon: '#ea9a97',
-		dawn: '#d7827e',
+		hex: '#ebbcba',
+		rgba: 'rgba(235, 188, 186, 1)',
+		hsla: 'hsla(2, 55%, 83%, 1)',
 	},
 	pine: {
-		dark: '#31748f',
-		moon: '#3e8fb0',
-		dawn: '#286983',
+		hex: '#31748f',
+		rgba: 'rgba(49, 116, 143, 1)',
+		hsla: 'hsla(197, 49%, 38%, 1)',
 	},
 	foam: {
-		dark: '#9ccfd8',
-		moon: '#9ccfd8',
-		dawn: '#56949f',
+		hex: '#9ccfd8',
+		rgba: 'rgba(156, 207, 216, 1)',
+		hsla: 'hsla(189, 43%, 73%, 1)',
 	},
 	iris: {
-		dark: '#c4a7e7',
-		moon: '#c4a7e7',
-		dawn: '#907aa9',
+		hex: '#c4a7e7',
+		rgba: 'rgba(196, 167, 231, 1)',
+		hsla: 'hsla(267, 57%, 78%, 1)',
 	},
-	highlight: {
-		dark: '#403d52',
-		moon: '#44415a',
-		dawn: '#dfdad9',
-	},
-	highlightInactive: {
-		dark: '#21202e',
-		moon: '#2a283e',
-		dawn: '#f4ede8',
-	},
-	highlightOverlay: {
-		dark: '#524f67',
-		moon: '#56526e',
-		dawn: '#cecacd',
+	highlights: {
+		alpha: {
+			low: {
+				hex: colorish('#6e6a86', 0.1),
+				rgba: 'rgba(110, 106, 134, 0.1)',
+				hsla: 'hsla(249, 12%, 47%, 0.1)',
+			},
+			med: {
+				hex: colorish('#6e6a86', 0.2),
+				rgba: 'rgba(110, 106, 134, 0.2)',
+				hsla: 'hsla(249, 12%, 47%, 0.2)',
+			},
+			high: {
+				hex: colorish('#6e6a86', 0.4),
+				rgba: 'rgba(110, 106, 134, 0.4)',
+				hsla: 'hsla(249, 12%, 47%, 0.4)',
+			},
+		},
+		blend: {
+			low: {
+				hex: '#21202e',
+				rgba: 'rgba(33, 32, 46, 1)',
+				hsla: 'hsla(244, 18%, 15%, 1)',
+			},
+			med: {
+				hex: '#403d52',
+				rgba: 'rgba(64, 61, 82, 1)',
+				hsla: 'hsla(249, 15%, 28%, 1)',
+			},
+			high: {
+				hex: '#524f67',
+				rgba: 'rgba(82, 79, 103, 1)',
+				hsla: 'hsla(248, 13%, 36%, 1)',
+			},
+		},
 	},
 }
 
-const colorsByVariant = {
-	dark: {
-		base: '#191724',
-		surface: '#1f1d2e',
-		overlay: '#26233a',
-		inactive: '#6e6a86',
-		subtle: '#908caa',
-		text: '#e0def4',
-		love: '#eb6f92',
-		gold: '#f6c177',
-		rose: '#ebbcba',
-		pine: '#31748f',
-		foam: '#9ccfd8',
-		iris: '#c4a7e7',
-		highlight: '#403d52',
-		highlightInactive: '#21202e',
-		highlightOverlay: '#524f67',
+const moon = {
+	base: {
+		hex: '#232136',
+		rgba: 'rgba(35, 33, 54, 1)',
+		hsla: 'hsla(246, 24%, 17%, 1)',
 	},
-
-	moon: {
-		base: '#232136',
-		surface: '#2a273f',
-		overlay: '#393552',
-		inactive: '#6e6a86',
-		subtle: '#908caa',
-		text: '#e0def4',
-		love: '#eb6f92',
-		gold: '#f6c177',
-		rose: '#ea9a97',
-		pine: '#3e8fb0',
-		foam: '#9ccfd8',
-		iris: '#c4a7e7',
-		highlight: '#44415a',
-		highlightInactive: '#2a283e',
-		highlightOverlay: '#56526e',
+	surface: {
+		hex: '#2a273f',
+		rgba: 'rgba(42, 39, 63, 1)',
+		hsla: 'hsla(248, 24%, 20%, 1)',
 	},
+	overlay: {
+		hex: '#393552',
+		rgba: 'rgba(57, 53, 82, 1)',
+		hsla: 'hsla(248, 21%, 26%, 1)',
+	},
+	muted: {
+		hex: '#6e6a86',
+		rgba: 'rgba(110, 106, 134, 1)',
+		hsla: 'hsla(249, 12%, 47%, 1)',
+	},
+	subtle: {
+		hex: '#908caa',
+		rgba: 'rgba(144, 140, 170, 1)',
+		hsla: 'hsla(248, 15%, 61%, 1)',
+	},
+	text: {
+		hex: '#e0def4',
+		rgba: 'rgba(224, 222, 244, 1)',
+		hsla: 'hsla(245, 50%, 91%, 1)',
+	},
+	love: {
+		hex: '#eb6f92',
+		rgba: 'rgba(235, 111, 146, 1)',
+		hsla: 'hsla(343, 76%, 68%, 1)',
+	},
+	gold: {
+		hex: '#f6c177',
+		rgba: 'rgba(246, 193, 119, 1)',
+		hsla: 'hsla(35, 88%, 72%, 1)',
+	},
+	rose: {
+		hex: '#ea9a97',
+		rgba: 'rgba(234, 154, 151, 1)',
+		hsla: 'hsla(2, 66%, 75%, 1)',
+	},
+	pine: {
+		hex: '#3e8fb0',
+		rgba: 'rgba(62, 143, 176, 1)',
+		hsla: 'hsla(197, 48%, 47%, 1)',
+	},
+	foam: {
+		hex: '#9ccfd8',
+		rgba: 'rgba(156, 207, 216, 1)',
+		hsla: 'hsla(189, 43%, 73%, 1)',
+	},
+	iris: {
+		hex: '#c4a7e7',
+		rgba: 'rgba(196, 167, 231, 1)',
+		hsla: 'hsla(267, 57%, 78%, 1)',
+	},
+	highlights: {
+		alpha: {
+			low: {
+				hex: colorish('#817c9c', 0.08),
+				rgba: 'rgba(129, 124, 156, 0.08)',
+				hsla: 'hsla(249, 14%, 55%, 0.08)',
+			},
+			med: {
+				hex: colorish('#817c9c', 0.15),
+				rgba: 'rgba(129, 124, 156, 0.15)',
+				hsla: 'hsla(249, 14%, 55%, 0.15)',
+			},
+			high: {
+				hex: colorish('#817c9c', 0.3),
+				rgba: 'rgba(129, 124, 156, 0.3)',
+				hsla: 'hsla(249, 14%, 55%, 0.3)',
+			},
+		},
+		blend: {
+			low: {
+				hex: '#2a283e',
+				rgba: 'rgba(42, 40, 62, 1)',
+				hsla: 'hsla(245, 22%, 20%, 1)',
+			},
+			med: {
+				hex: '#44415a',
+				rgba: 'rgba(68, 65, 90, 1)',
+				hsla: 'hsla(247, 16%, 30%, 1)',
+			},
+			high: {
+				hex: '#56526e',
+				rgba: 'rgba(86, 82, 110, 1)',
+				hsla: 'hsla(249, 15%, 38%, 1)',
+			},
+		},
+	},
+}
 
-	dawn: {
-		base: '#faf4ed',
-		surface: '#fffaf3',
-		overlay: '#f2e9de',
-		inactive: '#9893a5',
-		subtle: '#797593',
-		text: '#575279',
-		love: '#b4637a',
-		gold: '#ea9d34',
-		rose: '#d7827e',
-		pine: '#286983',
-		foam: '#56949f',
-		iris: '#907aa9',
-		highlight: '#dfdad9',
-		highlightInactive: '#f4ede8',
-		highlightOverlay: '#cecacd',
+const dawn = {
+	base: {
+		hex: '#faf4ed',
+		rgba: 'rgba(250, 244, 237, 1)',
+		hsla: 'hsla(32, 57%, 95%, 1)',
+	},
+	surface: {
+		hex: '#fffaf3',
+		rgba: 'rgba(255, 250, 243, 1)',
+		hsla: 'hsla(35, 100%, 98%, 1)',
+	},
+	overlay: {
+		hex: '#f2e9de',
+		rgba: 'rgba(242, 233, 222, 1)',
+		hsla: 'hsla(33, 43%, 91%, 1)',
+	},
+	muted: {
+		hex: '#9893a5',
+		rgba: 'rgba(152, 147, 165, 1)',
+		hsla: 'hsla(257, 9%, 61%, 1)',
+	},
+	subtle: {
+		hex: '#797593',
+		rgba: 'rgba(121, 117, 147, 1)',
+		hsla: 'hsla(248, 12%, 52%, 1)',
+	},
+	text: {
+		hex: '#575279',
+		rgba: 'rgba(87, 82, 121, 1)',
+		hsla: 'hsla(248, 19%, 40%, 1)',
+	},
+	love: {
+		hex: '#b4637a',
+		rgba: 'rgba(180, 99, 122, 1)',
+		hsla: 'hsla(343, 35%, 55%, 1)',
+	},
+	gold: {
+		hex: '#ea9d34',
+		rgba: 'rgba(234, 157, 52, 1)',
+		hsla: 'hsla(35, 81%, 56%, 1)',
+	},
+	rose: {
+		hex: '#d7827e',
+		rgba: 'rgba(215, 130, 126, 1)',
+		hsla: 'hsla(3, 53%, 67%, 1)',
+	},
+	pine: {
+		hex: '#286983',
+		rgba: 'rgba(40, 105, 131, 1)',
+		hsla: 'hsla(197, 53%, 34%, 1)',
+	},
+	foam: {
+		hex: '#56949f',
+		rgba: 'rgba(86, 148, 159, 1)',
+		hsla: 'hsla(189, 30%, 48%, 1)',
+	},
+	iris: {
+		hex: '#907aa9',
+		rgba: 'rgba(144, 122, 169, 1)',
+		hsla: 'hsla(268, 21%, 57%, 1)',
+	},
+	highlights: {
+		alpha: {
+			low: {
+				hex: colorish('#6e6a86', 0.05),
+				rgba: 'rgba(110, 106, 134, 0.05)',
+				hsla: 'hsla(249, 12%, 47%, 0.05)',
+			},
+			med: {
+				hex: colorish('#6e6a86', 0.08),
+				rgba: 'rgba(110, 106, 134, 0.08)',
+				hsla: 'hsla(249, 12%, 47%, 0.08)',
+			},
+			high: {
+				hex: colorish('#6e6a86', 0.15),
+				rgba: 'rgba(110, 106, 134, 0.15)',
+				hsla: 'hsla(249, 12%, 47%, 0.15)',
+			},
+		},
+		blend: {
+			low: {
+				hex: '#f4ede8',
+				rgba: 'rgba(244, 237, 232, 1)',
+				hsla: 'hsla(25, 35%, 93%, 1)',
+			},
+			med: {
+				hex: '#dfdad9',
+				rgba: 'rgba(223, 218, 217, 1)',
+				hsla: 'hsla(10, 9%, 86%, 1)',
+			},
+			high: {
+				hex: '#cecacd',
+				rgba: 'rgba(206, 202, 205, 1)',
+				hsla: 'hsla(315, 4%, 80%, 1)',
+			},
+		},
 	},
 }
 
 const palette = {
-	...colorsByRole,
-	...colorsByVariant,
+	variants: {
+		main,
+		moon,
+		dawn,
+	},
+	roles: {
+		base: {
+			main: main.base,
+			moon: moon.base,
+			dawn: dawn.base,
+		},
+		surface: {
+			main: main.surface,
+			moon: moon.surface,
+			dawn: dawn.surface,
+		},
+		overlay: {
+			main: main.overlay,
+			moon: moon.overlay,
+			dawn: dawn.overlay,
+		},
+		muted: {
+			main: main.muted,
+			moon: moon.muted,
+			dawn: dawn.muted,
+		},
+		subtle: {
+			main: main.subtle,
+			moon: moon.subtle,
+			dawn: dawn.subtle,
+		},
+		text: {
+			main: main.text,
+			moon: moon.text,
+			dawn: dawn.text,
+		},
+		love: {
+			main: main.love,
+			moon: moon.love,
+			dawn: dawn.love,
+		},
+		gold: {
+			main: main.gold,
+			moon: moon.gold,
+			dawn: dawn.gold,
+		},
+		rose: {
+			main: main.rose,
+			moon: moon.rose,
+			dawn: dawn.rose,
+		},
+		pine: {
+			main: main.pine,
+			moon: moon.pine,
+			dawn: dawn.pine,
+		},
+		foam: {
+			main: main.foam,
+			moon: moon.foam,
+			dawn: dawn.foam,
+		},
+		iris: {
+			main: main.iris,
+			moon: moon.iris,
+			dawn: dawn.iris,
+		},
+		highlights: {
+			alpha: {
+				low: {
+					main: main.highlights.alpha.low,
+					moon: moon.highlights.alpha.low,
+					dawn: dawn.highlights.alpha.low,
+				},
+				med: {
+					main: main.highlights.alpha.med,
+					moon: moon.highlights.alpha.med,
+					dawn: dawn.highlights.alpha.med,
+				},
+				high: {
+					main: main.highlights.alpha.high,
+					moon: moon.highlights.alpha.high,
+					dawn: dawn.highlights.alpha.high,
+				},
+			},
+			blend: {
+				low: {
+					main: main.highlights.blend.low,
+					moon: moon.highlights.blend.low,
+					dawn: dawn.highlights.blend.low,
+				},
+				med: {
+					main: main.highlights.blend.med,
+					moon: moon.highlights.blend.med,
+					dawn: dawn.highlights.blend.med,
+				},
+				high: {
+					main: main.highlights.blend.high,
+					moon: moon.highlights.blend.high,
+					dawn: dawn.highlights.blend.high,
+				},
+			},
+		},
+	},
 }
 
+export const {variants, roles} = palette
 export default palette
-export {
-	palette,
-	colorsByRole,
-	colorsByVariant,
-	transparentHighlightsByRole,
-	transparentHighlightsByVariant,
-}

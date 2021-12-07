@@ -24,23 +24,14 @@ npm install @rose-pine/palette
 ## Usage
 
 ```js
-import palette from '@rose-pine/palette'
+import {variants, roles} from '@rose-pine/palette'
+
+roles.base.main.hex
+// => '#191724'
+
+roles.surface.dawn.rgba
+// => 'rgba(255, 250, 243, 1)'
+
+variants.moon.highlights.alpha.low.hsla
+// => 'hsla(249, 14%, 55%, 0.08)'
 ```
-
-### By Variant
-
-```js
-palette.dawn
-// { base: '#faf4ed', surface: '#fffaf3', ...}
-```
-
-### By Role
-
-```js
-palette.overlay
-// { core: '#191724', moon: '#232136', dawn: '#faf4ed' }
-```
-
-## Available Values
-
-For variants, roles, and color swatches, please see Rosé Pine's [official palette resource](https://rosepinetheme.com/palette).
