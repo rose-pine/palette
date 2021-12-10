@@ -29,9 +29,9 @@ import {variants, roles} from '@rose-pine/palette'
 roles.base.main.hex
 // => '#191724'
 
-roles.surface.dawn.rgba
-// => 'rgba(255, 250, 243, 1)'
+roles.surface.dawn.rgb
+// => 'rgb(255, 250, 243)'
 
-variants.moon.highlights.alpha.low.hsla
+variants.moon.highlights.low.hsla
 // => 'hsla(249, 14%, 55%, 0.08)'
 ```
