@@ -1,8 +1,0 @@
-{
-	"extends": "@mvllow/tsconfig",
-	"compilerOptions": {
-		"module": "esnext",
-		"outDir": "dist"
-	},
-	"include": ["source"]
-}

@@ -1,5 +1,3 @@
-import colorish from 'colorish'
-
 const main = {
 	base: {
 		hex: '#191724',
@@ -61,30 +59,35 @@ const main = {
 		rgb: 'rgb(196, 167, 231)',
 		hsl: 'hsl(267, 57%, 78%)',
 	},
-	highlights: {
-		low: {
-			hex: '#21202e',
-			rgb: 'rgb(33, 32, 46)',
-			hsl: 'hsl(244, 18%, 15%)',
-			hexa: colorish('#6e6a86', 0.1),
-			rgba: 'rgba(110, 106, 134, 0.1)',
-			hsla: 'hsla(249, 12%, 47%, 0.1)',
+	highlightLow: {
+		hex: '#21202e',
+		rgb: 'rgb(33, 32, 46)',
+		hsl: 'hsl(244, 18%, 15%)',
+		alpha: {
+			hex: '#6e6a861a',
+			rgb: 'rgba(110, 106, 134, 0.1)',
+			hsl: 'hsla(249, 12%, 47%, 0.1)',
 		},
-		med: {
-			hex: '#403d52',
-			rgb: 'rgb(64, 61, 82)',
-			hsl: 'hsl(249, 15%, 28%)',
-			hexa: colorish('#6e6a86', 0.2),
-			rgba: 'rgba(110, 106, 134, 0.2)',
-			hsla: 'hsla(249, 12%, 47%, 0.2)',
+	},
+
+	highlightMed: {
+		hex: '#403d52',
+		rgb: 'rgb(64, 61, 82)',
+		hsl: 'hsl(249, 15%, 28%)',
+		alpha: {
+			hex: '#6e6a8633',
+			rgb: 'rgba(110, 106, 134, 0.2)',
+			hsl: 'hsla(249, 12%, 47%, 0.2)',
 		},
-		high: {
-			hex: '#524f67',
-			rgb: 'rgb(82, 79, 103)',
-			hsl: 'hsl(248, 13%, 36%)',
-			hexa: colorish('#6e6a86', 0.4),
-			rgba: 'rgba(110, 106, 134, 0.4)',
-			hsla: 'hsla(249, 12%, 47%, 0.4)',
+	},
+	highlightHigh: {
+		hex: '#524f67',
+		rgb: 'rgb(82, 79, 103)',
+		hsl: 'hsl(248, 13%, 36%)',
+		alpha: {
+			hex: '#6e6a8666',
+			rgb: 'rgba(110, 106, 134, 0.4)',
+			hsl: 'hsla(249, 12%, 47%, 0.4)',
 		},
 	},
 }
@@ -150,30 +153,34 @@ const moon = {
 		rgb: 'rgb(196, 167, 231)',
 		hsl: 'hsl(267, 57%, 78%)',
 	},
-	highlights: {
-		low: {
-			hex: '#2a283e',
-			rgb: 'rgb(42, 40, 62)',
-			hsl: 'hsl(245, 22%, 20%)',
-			hexa: colorish('#817c9c', 0.08),
-			rgba: 'rgba(129, 124, 156, 0.08)',
-			hsla: 'hsla(249, 14%, 55%, 0.08)',
+	highlightLow: {
+		hex: '#2a283e',
+		rgb: 'rgb(42, 40, 62)',
+		hsl: 'hsl(245, 22%, 20%)',
+		alpha: {
+			hex: '#817c9c14',
+			rgb: 'rgba(129, 124, 156, 0.08)',
+			hsl: 'hsla(249, 14%, 55%, 0.08)',
 		},
-		med: {
-			hex: '#44415a',
-			rgb: 'rgb(68, 65, 90)',
-			hsl: 'hsl(247, 16%, 30%)',
-			hexa: colorish('#817c9c', 0.15),
-			rgba: 'rgba(129, 124, 156, 0.15)',
-			hsla: 'hsla(249, 14%, 55%, 0.15)',
+	},
+	highlightMed: {
+		hex: '#44415a',
+		rgb: 'rgb(68, 65, 90)',
+		hsl: 'hsl(247, 16%, 30%)',
+		alpha: {
+			hex: '#817c9c26',
+			rgb: 'rgba(129, 124, 156, 0.15)',
+			hsl: 'hsla(249, 14%, 55%, 0.15)',
 		},
-		high: {
-			hex: '#56526e',
-			rgb: 'rgb(86, 82, 110)',
-			hsl: 'hsl(249, 15%, 38%)',
-			hexa: colorish('#817c9c', 0.3),
-			rgba: 'rgba(129, 124, 156, 0.3)',
-			hsla: 'hsla(249, 14%, 55%, 0.3)',
+	},
+	highlightHigh: {
+		hex: '#56526e',
+		rgb: 'rgb(86, 82, 110)',
+		hsl: 'hsl(249, 15%, 38%)',
+		alpha: {
+			hex: '#817c9c4d',
+			rgb: 'rgba(129, 124, 156, 0.3)',
+			hsl: 'hsla(249, 14%, 55%, 0.3)',
 		},
 	},
 }
@@ -239,30 +246,34 @@ const dawn = {
 		rgb: 'rgb(144, 122, 169)',
 		hsl: 'hsl(268, 21%, 57%)',
 	},
-	highlights: {
-		low: {
-			hex: '#f4ede8',
-			rgb: 'rgb(244, 237, 232)',
-			hsl: 'hsl(25, 35%, 93%)',
-			hexa: colorish('#6e6a86', 0.05),
-			rgba: 'rgba(110, 106, 134, 0.05)',
-			hsla: 'hsla(249, 12%, 47%, 0.05)',
+	highlightLow: {
+		hex: '#f4ede8',
+		rgb: 'rgb(244, 237, 232)',
+		hsl: 'hsl(25, 35%, 93%)',
+		alpha: {
+			hex: '#6e6a860d',
+			rgb: 'rgba(110, 106, 134, 0.05)',
+			hsl: 'hsla(249, 12%, 47%, 0.05)',
 		},
-		med: {
-			hex: '#dfdad9',
-			rgb: 'rgb(223, 218, 217)',
-			hsl: 'hsl(10, 9%, 86%)',
-			hexa: colorish('#6e6a86', 0.08),
-			rgba: 'rgba(110, 106, 134, 0.08)',
-			hsla: 'hsla(249, 12%, 47%, 0.08)',
+	},
+	highlightMed: {
+		hex: '#dfdad9',
+		rgb: 'rgb(223, 218, 217)',
+		hsl: 'hsl(10, 9%, 86%)',
+		alpha: {
+			hex: '#6e6a8614',
+			rgb: 'rgba(110, 106, 134, 0.08)',
+			hsl: 'hsla(249, 12%, 47%, 0.08)',
 		},
-		high: {
-			hex: '#cecacd',
-			rgb: 'rgb(206, 202, 205)',
-			hsl: 'hsl(315, 4%, 80%)',
-			hexa: colorish('#6e6a86', 0.15),
-			rgba: 'rgba(110, 106, 134, 0.15)',
-			hsla: 'hsla(249, 12%, 47%, 0.15)',
+	},
+	highlightHigh: {
+		hex: '#cecacd',
+		rgb: 'rgb(206, 202, 205)',
+		hsl: 'hsl(315, 4%, 80%)',
+		alpha: {
+			hex: '#6e6a8626',
+			rgb: 'rgba(110, 106, 134, 0.15)',
+			hsl: 'hsla(249, 12%, 47%, 0.15)',
 		},
 	},
 }
@@ -334,22 +345,20 @@ const palette = {
 			moon: moon.iris,
 			dawn: dawn.iris,
 		},
-		highlights: {
-			low: {
-				main: main.highlights.low,
-				moon: moon.highlights.low,
-				dawn: dawn.highlights.low,
-			},
-			med: {
-				main: main.highlights.med,
-				moon: moon.highlights.med,
-				dawn: dawn.highlights.med,
-			},
-			high: {
-				main: main.highlights.high,
-				moon: moon.highlights.high,
-				dawn: dawn.highlights.high,
-			},
+		highlightLow: {
+			main: main.highlightLow,
+			moon: moon.highlightLow,
+			dawn: dawn.highlightLow,
+		},
+		highlightMed: {
+			main: main.highlightMed,
+			moon: moon.highlightMed,
+			dawn: dawn.highlightMed,
+		},
+		highlightHigh: {
+			main: main.highlightHigh,
+			moon: moon.highlightHigh,
+			dawn: dawn.highlightHigh,
 		},
 	},
 }

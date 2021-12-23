@@ -32,6 +32,6 @@ roles.base.main.hex
 roles.surface.dawn.rgb
 // => 'rgb(255, 250, 243)'
 
-variants.moon.highlights.low.hsla
+variants.moon.highlightLow.hsl
 // => 'hsla(249, 14%, 55%, 0.08)'
 ```
