@@ -10,7 +10,6 @@
 		"email": "hi@rosepinetheme.com"
 	},
 	"type": "module",
-	"exports": "./index.js",
 	"engines": {
 		"node": ">=12"
 	},
