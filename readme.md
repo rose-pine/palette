@@ -18,7 +18,7 @@ This package allows for easy import of the colors in the official Rosé Pine pal
 ## Install
 
 ```sh
-npm install @rose-pine/palette
+npm install @rose-pine/palette@next
 ```
 
 ## Usage
@@ -33,5 +33,8 @@ roles.surface.dawn.rgb
 // => 'rgb(255, 250, 243)'
 
 variants.moon.highlightLow.hsl
+// => 'hsl(245, 22%, 20%)'
+
+variants.moon.highlightLow.alpha.hsl
 // => 'hsla(249, 14%, 55%, 0.08)'
 ```
