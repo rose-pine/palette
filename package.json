@@ -15,7 +15,7 @@
 		"node": ">=12"
 	},
 	"scripts": {
-		"build": "npm test",
+		"build": "npm run build:css && npm test",
 		"build:css": "node lib/css/build.js",
 		"test": "xo && ava",
 		"release": "np",
