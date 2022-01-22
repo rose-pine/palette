@@ -18,10 +18,12 @@ This package allows for easy import of the colors in the official Rosé Pine pal
 ## Install
 
 ```sh
-npm install @rose-pine/palette@next
+npm install @rose-pine/palette
 ```
 
 ## Usage
+
+**js**
 
 ```js
 import {variants, roles} from '@rose-pine/palette'
@@ -37,4 +39,15 @@ variants.moon.highlightLow.hsl
 
 variants.moon.highlightLow.alpha.hsl
 // => 'hsla(249, 14%, 55%, 0.08)'
+```
+
+**css**
+
+```css
+@import url("https://unpkg.com/@rose-pine/palette/css/rose-pine.css");
+
+body {
+	color: var(--rose-main-text);
+	background: var(--rose-main-base);
+}
 ```
