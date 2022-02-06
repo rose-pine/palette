@@ -197,7 +197,7 @@ const dawn = {
 		hsl: 'hsl(35, 100%, 98%)',
 	},
 	overlay: {
-		hex: '#f2e9de',
+		hex: '#f2e9e1',
 		rgb: 'rgb(242, 233, 222)',
 		hsl: 'hsl(33, 43%, 91%)',
 	},
