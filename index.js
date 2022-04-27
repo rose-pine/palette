@@ -69,7 +69,6 @@ const main = {
 			hsl: 'hsla(249, 12%, 47%, 0.1)',
 		},
 	},
-
 	highlightMed: {
 		hex: '#403d52',
 		rgb: 'rgb(64, 61, 82)',
