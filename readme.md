@@ -44,7 +44,7 @@ variants.moon.highlightLow.alpha.hsl
 **css**
 
 ```css
-@import url('https://unpkg.com/@rose-pine/palette/css/rose-pine.css');
+@import url('https://unpkg.com/@rose-pine/palette@3.0.1/css/rose-pine.css');
 
 body {
 	color: var(--rp-main-text);
