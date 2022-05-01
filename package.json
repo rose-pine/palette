@@ -38,12 +38,12 @@
 		"access": "public"
 	},
 	"devDependencies": {
-		"ava": "^3.15.0",
-		"csso": "^5.0.2",
-		"np": "^7.6.0",
+		"ava": "^4.2.0",
+		"csso": "^5.0.3",
+		"np": "^7.6.1",
 		"param-case": "^3.0.4",
-		"prettier": "^2.5.1",
-		"xo": "^0.47.0"
+		"prettier": "^2.6.2",
+		"xo": "^0.48.0"
 	},
 	"prettier": {
 		"bracketSpacing": false,
@@ -54,10 +54,5 @@
 	},
 	"xo": {
 		"prettier": true
-	},
-	"ava": {
-		"nonSemVerExperiments": {
-			"configurableModuleFormat": true
-		}
 	}
 }
