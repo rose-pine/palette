@@ -47,8 +47,8 @@ variants.moon.highlightLow.alpha.hsl
 @import url('https://unpkg.com/@rose-pine/palette/css/rose-pine.css');
 
 body {
-	color: var(--rose-main-text);
-	background: var(--rose-main-base);
+	color: var(--rp-main-text);
+	background: var(--rp-main-base);
 }
 ```
 
