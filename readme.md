@@ -44,10 +44,37 @@ variants.moon.highlightLow.alpha.hsl
 **css**
 
 ```css
-@import url("https://unpkg.com/@rose-pine/palette/css/rose-pine.css");
+@import url('https://unpkg.com/@rose-pine/palette/css/rose-pine.css');
 
 body {
 	color: var(--rose-main-text);
 	background: var(--rose-main-base);
 }
 ```
+
+## Palette
+
+**Neutral**
+
+| Role            | Description                               | Usage                                                                                                               |
+| --------------- | ----------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
+| `base`          | Primary background                        | inactive tabs, sidebars                                                                                             |
+| `surface`       | Low contrast background atop `base`       | text inputs, panels                                                                                                 |
+| `overlay`       | Medium contrast background atop `surface` | text inputs, panels, active tabs                                                                                    |
+| `muted`         | Low contrast foreground                   | comments, git ignored                                                                                               |
+| `subtle`        | Medium contrast foreground                | non-selected results, inactive tabs, punctuation, operators                                                         |
+| `text`          | High contrast foreground                  | cursor text, selected results, selection foreground (paired with `highlightMed` background), active tabs, variables |
+| `highlightLow`  | Low contrast highlight                    | cursor line                                                                                                         |
+| `highlightMed`  | Medium contrast highlight                 | selection background (paired with `text` foreground)                                                                |
+| `highlightHigh` | High contrast highlight                   | cursor background                                                                                                   |
+
+**Accent**
+
+| Role   | Usage                                                            |
+| ------ | ---------------------------------------------------------------- |
+| `love` | terminal red, builtins, errors, git delete                       |
+| `gold` | terminal yellow, strings, warnings                               |
+| `rose` | terminal cyan, booleans, git change, git dirty, git text         |
+| `pine` | terminal green, functions, git rename                            |
+| `foam` | terminal blue, object keys, info, git add                        |
+| `iris` | terminal magenta, parameters, links, hints, git merge, git stage |
