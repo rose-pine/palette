@@ -64,7 +64,7 @@ body {
 | `text`          | High contrast foreground                  | cursor text, selected results, selection foreground (paired with `highlightMed` background), active tabs, variables |
 | `highlightLow`  | Low contrast highlight                    | cursor line                                                                                                         |
 | `highlightMed`  | Medium contrast highlight                 | selection background (paired with `text` foreground)                                                                |
-| `highlightHigh` | High contrast highlight                   | cursor background                                                                                                   |
+| `highlightHigh` | High contrast highlight                   | cursor background, borders                                                                                          |
 
 **Accent**
 
