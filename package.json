@@ -18,7 +18,8 @@
 		"version": "npm run build"
 	},
 	"files": [
-		"dist"
+		"dist",
+		"types"
 	],
 	"types": "types",
 	"keywords": [
