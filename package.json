@@ -18,7 +18,7 @@
 		"build": "npm run build:css && npm test",
 		"build:css": "node lib/css/build.js",
 		"test": "xo && ava",
-		"release": "np",
+		"release": "npx np@latest",
 		"prepare": "npm run build"
 	},
 	"files": [
@@ -38,7 +38,6 @@
 	"devDependencies": {
 		"ava": "^4.2.0",
 		"csso": "^5.0.3",
-		"np": "^7.6.1",
 		"param-case": "^3.0.4",
 		"@mvllow/tsconfig": "^0.2.2",
 		"prettier": "^2.6.2",
