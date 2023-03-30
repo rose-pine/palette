@@ -10,7 +10,7 @@
 		"email": "hi@rosepinetheme.com"
 	},
 	"type": "module",
-	"exports": "./index.js",
+	"exports": "./dist/index.js",
 	"engines": {
 		"node": ">=16"
 	},
@@ -21,8 +21,7 @@
 		"prepare": "npm run build"
 	},
 	"files": [
-		"dist/",
-		"source/index.js"
+		"dist"
 	],
 	"types": "types",
 	"keywords": [
@@ -51,6 +50,10 @@
 		"useTabs": true
 	},
 	"xo": {
-		"prettier": true
+		"prettier": true,
+		"ignores": [
+			"dist/",
+			"types/"
+		]
 	}
 }
