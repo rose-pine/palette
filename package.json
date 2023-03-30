@@ -12,16 +12,15 @@
 		"node": ">=16"
 	},
 	"scripts": {
-		"build": "del-cli dist && tsc --declaration && node lib/build.js && cp -r ./source/*.js ./dist/ && npm test",
+		"build": "del-cli dist && node lib/build.js && cp -r ./source/ ./dist/ && npm test",
 		"test": "xo && ava",
 		"release": "npx np@latest",
 		"version": "npm run build"
 	},
 	"files": [
-		"dist",
-		"types"
+		"dist"
 	],
-	"types": "types",
+	"types": "dist",
 	"keywords": [
 		"colors",
 		"theme",
@@ -37,8 +36,7 @@
 		"ava": "^5.2.0",
 		"csso": "^5.0.5",
 		"del-cli": "^5.0.0",
-		"prettier": "^2.6.2",
-		"typescript": "^5.0.2",
+		"prettier": "^2.8.7",
 		"xo": "^0.53.1"
 	},
 	"prettier": {
@@ -51,8 +49,7 @@
 	"xo": {
 		"prettier": true,
 		"ignores": [
-			"dist/",
-			"types/"
+			"dist/"
 		]
 	}
 }
