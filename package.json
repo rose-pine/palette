@@ -5,10 +5,7 @@
 	"license": "MIT",
 	"repository": "rose-pine/palette",
 	"funding": "https://github.com/rose-pine/palette?sponsor=1",
-	"author": {
-		"name": "Rosé Pine",
-		"email": "hi@rosepinetheme.com"
-	},
+	"author": "Rosé Pine <hi@rosepinetheme.com>",
 	"type": "module",
 	"exports": "./dist/index.js",
 	"engines": {
@@ -18,7 +15,7 @@
 		"build": "node source/build.js",
 		"test": "xo && ava",
 		"release": "npx np@latest",
-		"prepare": "npm run build"
+		"version": "npm run build"
 	},
 	"files": [
 		"dist"
