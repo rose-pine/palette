@@ -23,10 +23,8 @@
 	},
 	"files": [
 		"css/",
-		"index.js",
-		"index.d.ts"
+		"source/index.js"
 	],
-	"types": "index.d.ts",
 	"keywords": [
 		"colors",
 		"theme",
