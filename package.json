@@ -24,6 +24,7 @@
 		"dist/",
 		"source/index.js"
 	],
+	"types": "types",
 	"keywords": [
 		"colors",
 		"theme",
@@ -39,6 +40,7 @@
 		"ava": "^5.2.0",
 		"csso": "^5.0.5",
 		"prettier": "^2.6.2",
+		"typescript": "^5.0.2",
 		"xo": "^0.53.1"
 	},
 	"prettier": {

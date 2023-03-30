@@ -1,8 +1,10 @@
 {
 	"extends": "@mvllow/tsconfig",
 	"compilerOptions": {
+		"allowJs": true,
+		"emitDeclarationOnly": true,
 		"module": "esnext",
-		"outDir": "dist"
+		"outDir": "types"
 	},
 	"include": ["source", "lib"]
 }
