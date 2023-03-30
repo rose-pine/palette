@@ -15,14 +15,13 @@
 		"node": ">=16"
 	},
 	"scripts": {
-		"build": "npm run build:css && npm test",
-		"build:css": "node lib/css/build.js",
+		"build": "node source/build.js",
 		"test": "xo && ava",
 		"release": "npx np@latest",
 		"prepare": "npm run build"
 	},
 	"files": [
-		"css/",
+		"dist/",
 		"source/index.js"
 	],
 	"keywords": [
@@ -36,12 +35,11 @@
 		"access": "public"
 	},
 	"devDependencies": {
-		"ava": "^4.2.0",
-		"csso": "^5.0.3",
-		"param-case": "^3.0.4",
 		"@mvllow/tsconfig": "^0.2.2",
+		"ava": "^5.2.0",
+		"csso": "^5.0.5",
 		"prettier": "^2.6.2",
-		"xo": "^0.48.0"
+		"xo": "^0.53.1"
 	},
 	"prettier": {
 		"bracketSpacing": false,

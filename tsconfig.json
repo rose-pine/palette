@@ -4,5 +4,5 @@
 		"module": "esnext",
 		"outDir": "dist"
 	},
-	"include": ["source"]
+	"include": ["source", "lib"]
 }
