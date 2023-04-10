@@ -166,5 +166,22 @@ const palette = {
 	},
 };
 
+const objectKeys: <Type extends Record<string, unknown>>(
+	value: Type
+) => Array<`${Exclude<keyof Type, symbol>}`> = Object.keys;
+const uppercaseFirstCharacter = (word: string) =>
+	word.charAt(0).toUpperCase() + word.slice(1);
+
+const variantIds = objectKeys(palette.variants);
+const variantNames = ["Rosé Pine", "Rolé Pine Moon", "Rosé Pine Dawn"];
+const roleIds = objectKeys(palette.roles);
+const roleNames = roleIds.map((role) =>
+	role
+		.split("-")
+		.map((word) => uppercaseFirstCharacter(word))
+		.join(" ")
+);
+
+export {variantIds, variantNames, roleIds, roleNames};
 export const {variants, roles} = palette;
 export default palette;

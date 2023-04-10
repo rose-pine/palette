@@ -1,14 +1,14 @@
 import test from "ava";
-import {variants, roles} from "../source/index.js";
+import palette from "../source/index.js";
 
 test("main", (t) => {
-	t.deepEqual(roles.base, {
+	t.deepEqual(palette.roles.base, {
 		main: {hex: "191724", rgb: [25, 23, 36], hsl: [249, 22, 12]},
 		moon: {hex: "232136", rgb: [35, 33, 54], hsl: [246, 24, 17]},
 		dawn: {hex: "faf4ed", rgb: [250, 244, 237], hsl: [32, 57, 95]},
 	});
 
-	t.deepEqual(variants.dawn.highlightLow, {
+	t.deepEqual(palette.variants.dawn.highlightLow, {
 		hex: "f4ede8",
 		rgb: [244, 237, 232],
 		hsl: [25, 35, 93],

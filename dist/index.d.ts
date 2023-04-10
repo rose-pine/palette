@@ -1,183 +1,1167 @@
-/**
- * Palette variants
- */
-export namespace variants {
-	/**
-	 * Low-contrast dark variant
-	 */
-	const main: Roles<Color, AlphaColor>;
-	/**
-	 * Mid-contrast dark variant
-	 */
-	const moon: Roles<Color, AlphaColor>;
-	/**
-	 * Mid-contrast light variant
-	 */
-	const dawn: Roles<Color, AlphaColor>;
-}
-
-/**
- * Palette roles
- */
-export namespace roles {
-	/**
-	 * Background
-	 * - Primary background
-	 */
-	const base: Variants<Color>;
-	/**
-	 * Background
-	 * - Elements directly atop {@link Roles.base }
-	 */
-	const surface: Variants<Color>;
-	/**
-	 * Background
-	 * - Elements directly atop {@link Roles.surface}
-	 */
-	const overlay: Variants<Color>;
-	/**
-	 * Foreground
-	 * - Low-contrast elements
-	 * - Ignored git folders
-	 */
-	const muted: Variants<Color>;
-	/**
-	 * Foreground
-	 * - Mid-contrast elements
-	 * - Comments, punctuation, etc.
-	 */
-	const subtle: Variants<Color>;
-	/**
-	 * Foreground
-	 * - High-contrast elements
-	 * - Text, variables, etc.
-	 */
-	const text: Variants<Color>;
-	const love: Variants<Color>;
-	const gold: Variants<Color>;
-	const rose: Variants<Color>;
-	const pine: Variants<Color>;
-	const foam: Variants<Color>;
-	const iris: Variants<Color>;
-	/**
-	 * Highlight background
-	 * - Low-contrast selection
-	 */
-	const highlightLow: Variants<AlphaColor>;
-	/**
-	 * Highlight background
-	 * - Mid-contrast selection
-	 */
-	const highlightMed: Variants<AlphaColor>;
-	/**
-	 * Highlight background
-	 * - High-contrast selection
-	 */
-	const highlightHigh: Variants<AlphaColor>;
-}
+declare const palette: {
+    variants: {
+        main: {
+            base: {
+                hex: string;
+                rgb: number[];
+                hsl: number[];
+            };
+            surface: {
+                hex: string;
+                rgb: number[];
+                hsl: number[];
+            };
+            overlay: {
+                hex: string;
+                rgb: number[];
+                hsl: number[];
+            };
+            muted: {
+                hex: string;
+                rgb: number[];
+                hsl: number[];
+            };
+            subtle: {
+                hex: string;
+                rgb: number[];
+                hsl: number[];
+            };
+            text: {
+                hex: string;
+                rgb: number[];
+                hsl: number[];
+            };
+            love: {
+                hex: string;
+                rgb: number[];
+                hsl: number[];
+            };
+            gold: {
+                hex: string;
+                rgb: number[];
+                hsl: number[];
+            };
+            rose: {
+                hex: string;
+                rgb: number[];
+                hsl: number[];
+            };
+            pine: {
+                hex: string;
+                rgb: number[];
+                hsl: number[];
+            };
+            foam: {
+                hex: string;
+                rgb: number[];
+                hsl: number[];
+            };
+            iris: {
+                hex: string;
+                rgb: number[];
+                hsl: number[];
+            };
+            highlightLow: {
+                hex: string;
+                rgb: number[];
+                hsl: number[];
+                alpha: {
+                    hex: string;
+                    rgb: number[];
+                    hsl: number[];
+                };
+            };
+            highlightMed: {
+                hex: string;
+                rgb: number[];
+                hsl: number[];
+                alpha: {
+                    hex: string;
+                    rgb: number[];
+                    hsl: number[];
+                };
+            };
+            highlightHigh: {
+                hex: string;
+                rgb: number[];
+                hsl: number[];
+                alpha: {
+                    hex: string;
+                    rgb: number[];
+                    hsl: number[];
+                };
+            };
+        };
+        moon: {
+            base: {
+                hex: string;
+                rgb: number[];
+                hsl: number[];
+            };
+            surface: {
+                hex: string;
+                rgb: number[];
+                hsl: number[];
+            };
+            overlay: {
+                hex: string;
+                rgb: number[];
+                hsl: number[];
+            };
+            muted: {
+                hex: string;
+                rgb: number[];
+                hsl: number[];
+            };
+            subtle: {
+                hex: string;
+                rgb: number[];
+                hsl: number[];
+            };
+            text: {
+                hex: string;
+                rgb: number[];
+                hsl: number[];
+            };
+            love: {
+                hex: string;
+                rgb: number[];
+                hsl: number[];
+            };
+            gold: {
+                hex: string;
+                rgb: number[];
+                hsl: number[];
+            };
+            rose: {
+                hex: string;
+                rgb: number[];
+                hsl: number[];
+            };
+            pine: {
+                hex: string;
+                rgb: number[];
+                hsl: number[];
+            };
+            foam: {
+                hex: string;
+                rgb: number[];
+                hsl: number[];
+            };
+            iris: {
+                hex: string;
+                rgb: number[];
+                hsl: number[];
+            };
+            highlightLow: {
+                hex: string;
+                rgb: number[];
+                hsl: number[];
+                alpha: {
+                    hex: string;
+                    rgb: number[];
+                    hsl: number[];
+                };
+            };
+            highlightMed: {
+                hex: string;
+                rgb: number[];
+                hsl: number[];
+                alpha: {
+                    hex: string;
+                    rgb: number[];
+                    hsl: number[];
+                };
+            };
+            highlightHigh: {
+                hex: string;
+                rgb: number[];
+                hsl: number[];
+                alpha: {
+                    hex: string;
+                    rgb: number[];
+                    hsl: number[];
+                };
+            };
+        };
+        dawn: {
+            base: {
+                hex: string;
+                rgb: number[];
+                hsl: number[];
+            };
+            surface: {
+                hex: string;
+                rgb: number[];
+                hsl: number[];
+            };
+            overlay: {
+                hex: string;
+                rgb: number[];
+                hsl: number[];
+            };
+            muted: {
+                hex: string;
+                rgb: number[];
+                hsl: number[];
+            };
+            subtle: {
+                hex: string;
+                rgb: number[];
+                hsl: number[];
+            };
+            text: {
+                hex: string;
+                rgb: number[];
+                hsl: number[];
+            };
+            love: {
+                hex: string;
+                rgb: number[];
+                hsl: number[];
+            };
+            gold: {
+                hex: string;
+                rgb: number[];
+                hsl: number[];
+            };
+            rose: {
+                hex: string;
+                rgb: number[];
+                hsl: number[];
+            };
+            pine: {
+                hex: string;
+                rgb: number[];
+                hsl: number[];
+            };
+            foam: {
+                hex: string;
+                rgb: number[];
+                hsl: number[];
+            };
+            iris: {
+                hex: string;
+                rgb: number[];
+                hsl: number[];
+            };
+            highlightLow: {
+                hex: string;
+                rgb: number[];
+                hsl: number[];
+                alpha: {
+                    hex: string;
+                    rgb: number[];
+                    hsl: number[];
+                };
+            };
+            highlightMed: {
+                hex: string;
+                rgb: number[];
+                hsl: number[];
+                alpha: {
+                    hex: string;
+                    rgb: number[];
+                    hsl: number[];
+                };
+            };
+            highlightHigh: {
+                hex: string;
+                rgb: number[];
+                hsl: number[];
+                alpha: {
+                    hex: string;
+                    rgb: number[];
+                    hsl: number[];
+                };
+            };
+        };
+    };
+    roles: {
+        base: {
+            main: {
+                hex: string;
+                rgb: number[];
+                hsl: number[];
+            };
+            moon: {
+                hex: string;
+                rgb: number[];
+                hsl: number[];
+            };
+            dawn: {
+                hex: string;
+                rgb: number[];
+                hsl: number[];
+            };
+        };
+        surface: {
+            main: {
+                hex: string;
+                rgb: number[];
+                hsl: number[];
+            };
+            moon: {
+                hex: string;
+                rgb: number[];
+                hsl: number[];
+            };
+            dawn: {
+                hex: string;
+                rgb: number[];
+                hsl: number[];
+            };
+        };
+        overlay: {
+            main: {
+                hex: string;
+                rgb: number[];
+                hsl: number[];
+            };
+            moon: {
+                hex: string;
+                rgb: number[];
+                hsl: number[];
+            };
+            dawn: {
+                hex: string;
+                rgb: number[];
+                hsl: number[];
+            };
+        };
+        muted: {
+            main: {
+                hex: string;
+                rgb: number[];
+                hsl: number[];
+            };
+            moon: {
+                hex: string;
+                rgb: number[];
+                hsl: number[];
+            };
+            dawn: {
+                hex: string;
+                rgb: number[];
+                hsl: number[];
+            };
+        };
+        subtle: {
+            main: {
+                hex: string;
+                rgb: number[];
+                hsl: number[];
+            };
+            moon: {
+                hex: string;
+                rgb: number[];
+                hsl: number[];
+            };
+            dawn: {
+                hex: string;
+                rgb: number[];
+                hsl: number[];
+            };
+        };
+        text: {
+            main: {
+                hex: string;
+                rgb: number[];
+                hsl: number[];
+            };
+            moon: {
+                hex: string;
+                rgb: number[];
+                hsl: number[];
+            };
+            dawn: {
+                hex: string;
+                rgb: number[];
+                hsl: number[];
+            };
+        };
+        love: {
+            main: {
+                hex: string;
+                rgb: number[];
+                hsl: number[];
+            };
+            moon: {
+                hex: string;
+                rgb: number[];
+                hsl: number[];
+            };
+            dawn: {
+                hex: string;
+                rgb: number[];
+                hsl: number[];
+            };
+        };
+        gold: {
+            main: {
+                hex: string;
+                rgb: number[];
+                hsl: number[];
+            };
+            moon: {
+                hex: string;
+                rgb: number[];
+                hsl: number[];
+            };
+            dawn: {
+                hex: string;
+                rgb: number[];
+                hsl: number[];
+            };
+        };
+        rose: {
+            main: {
+                hex: string;
+                rgb: number[];
+                hsl: number[];
+            };
+            moon: {
+                hex: string;
+                rgb: number[];
+                hsl: number[];
+            };
+            dawn: {
+                hex: string;
+                rgb: number[];
+                hsl: number[];
+            };
+        };
+        pine: {
+            main: {
+                hex: string;
+                rgb: number[];
+                hsl: number[];
+            };
+            moon: {
+                hex: string;
+                rgb: number[];
+                hsl: number[];
+            };
+            dawn: {
+                hex: string;
+                rgb: number[];
+                hsl: number[];
+            };
+        };
+        foam: {
+            main: {
+                hex: string;
+                rgb: number[];
+                hsl: number[];
+            };
+            moon: {
+                hex: string;
+                rgb: number[];
+                hsl: number[];
+            };
+            dawn: {
+                hex: string;
+                rgb: number[];
+                hsl: number[];
+            };
+        };
+        iris: {
+            main: {
+                hex: string;
+                rgb: number[];
+                hsl: number[];
+            };
+            moon: {
+                hex: string;
+                rgb: number[];
+                hsl: number[];
+            };
+            dawn: {
+                hex: string;
+                rgb: number[];
+                hsl: number[];
+            };
+        };
+        highlightLow: {
+            main: {
+                hex: string;
+                rgb: number[];
+                hsl: number[];
+                alpha: {
+                    hex: string;
+                    rgb: number[];
+                    hsl: number[];
+                };
+            };
+            moon: {
+                hex: string;
+                rgb: number[];
+                hsl: number[];
+                alpha: {
+                    hex: string;
+                    rgb: number[];
+                    hsl: number[];
+                };
+            };
+            dawn: {
+                hex: string;
+                rgb: number[];
+                hsl: number[];
+                alpha: {
+                    hex: string;
+                    rgb: number[];
+                    hsl: number[];
+                };
+            };
+        };
+        highlightMed: {
+            main: {
+                hex: string;
+                rgb: number[];
+                hsl: number[];
+                alpha: {
+                    hex: string;
+                    rgb: number[];
+                    hsl: number[];
+                };
+            };
+            moon: {
+                hex: string;
+                rgb: number[];
+                hsl: number[];
+                alpha: {
+                    hex: string;
+                    rgb: number[];
+                    hsl: number[];
+                };
+            };
+            dawn: {
+                hex: string;
+                rgb: number[];
+                hsl: number[];
+                alpha: {
+                    hex: string;
+                    rgb: number[];
+                    hsl: number[];
+                };
+            };
+        };
+        highlightHigh: {
+            main: {
+                hex: string;
+                rgb: number[];
+                hsl: number[];
+                alpha: {
+                    hex: string;
+                    rgb: number[];
+                    hsl: number[];
+                };
+            };
+            moon: {
+                hex: string;
+                rgb: number[];
+                hsl: number[];
+                alpha: {
+                    hex: string;
+                    rgb: number[];
+                    hsl: number[];
+                };
+            };
+            dawn: {
+                hex: string;
+                rgb: number[];
+                hsl: number[];
+                alpha: {
+                    hex: string;
+                    rgb: number[];
+                    hsl: number[];
+                };
+            };
+        };
+    };
+};
+declare const variantIds: ("main" | "moon" | "dawn")[];
+declare const variantNames: string[];
+declare const roleIds: ("base" | "surface" | "overlay" | "muted" | "subtle" | "text" | "love" | "gold" | "rose" | "pine" | "foam" | "iris" | "highlightLow" | "highlightMed" | "highlightHigh")[];
+declare const roleNames: string[];
+export { variantIds, variantNames, roleIds, roleNames };
+export declare const variants: {
+    main: {
+        base: {
+            hex: string;
+            rgb: number[];
+            hsl: number[];
+        };
+        surface: {
+            hex: string;
+            rgb: number[];
+            hsl: number[];
+        };
+        overlay: {
+            hex: string;
+            rgb: number[];
+            hsl: number[];
+        };
+        muted: {
+            hex: string;
+            rgb: number[];
+            hsl: number[];
+        };
+        subtle: {
+            hex: string;
+            rgb: number[];
+            hsl: number[];
+        };
+        text: {
+            hex: string;
+            rgb: number[];
+            hsl: number[];
+        };
+        love: {
+            hex: string;
+            rgb: number[];
+            hsl: number[];
+        };
+        gold: {
+            hex: string;
+            rgb: number[];
+            hsl: number[];
+        };
+        rose: {
+            hex: string;
+            rgb: number[];
+            hsl: number[];
+        };
+        pine: {
+            hex: string;
+            rgb: number[];
+            hsl: number[];
+        };
+        foam: {
+            hex: string;
+            rgb: number[];
+            hsl: number[];
+        };
+        iris: {
+            hex: string;
+            rgb: number[];
+            hsl: number[];
+        };
+        highlightLow: {
+            hex: string;
+            rgb: number[];
+            hsl: number[];
+            alpha: {
+                hex: string;
+                rgb: number[];
+                hsl: number[];
+            };
+        };
+        highlightMed: {
+            hex: string;
+            rgb: number[];
+            hsl: number[];
+            alpha: {
+                hex: string;
+                rgb: number[];
+                hsl: number[];
+            };
+        };
+        highlightHigh: {
+            hex: string;
+            rgb: number[];
+            hsl: number[];
+            alpha: {
+                hex: string;
+                rgb: number[];
+                hsl: number[];
+            };
+        };
+    };
+    moon: {
+        base: {
+            hex: string;
+            rgb: number[];
+            hsl: number[];
+        };
+        surface: {
+            hex: string;
+            rgb: number[];
+            hsl: number[];
+        };
+        overlay: {
+            hex: string;
+            rgb: number[];
+            hsl: number[];
+        };
+        muted: {
+            hex: string;
+            rgb: number[];
+            hsl: number[];
+        };
+        subtle: {
+            hex: string;
+            rgb: number[];
+            hsl: number[];
+        };
+        text: {
+            hex: string;
+            rgb: number[];
+            hsl: number[];
+        };
+        love: {
+            hex: string;
+            rgb: number[];
+            hsl: number[];
+        };
+        gold: {
+            hex: string;
+            rgb: number[];
+            hsl: number[];
+        };
+        rose: {
+            hex: string;
+            rgb: number[];
+            hsl: number[];
+        };
+        pine: {
+            hex: string;
+            rgb: number[];
+            hsl: number[];
+        };
+        foam: {
+            hex: string;
+            rgb: number[];
+            hsl: number[];
+        };
+        iris: {
+            hex: string;
+            rgb: number[];
+            hsl: number[];
+        };
+        highlightLow: {
+            hex: string;
+            rgb: number[];
+            hsl: number[];
+            alpha: {
+                hex: string;
+                rgb: number[];
+                hsl: number[];
+            };
+        };
+        highlightMed: {
+            hex: string;
+            rgb: number[];
+            hsl: number[];
+            alpha: {
+                hex: string;
+                rgb: number[];
+                hsl: number[];
+            };
+        };
+        highlightHigh: {
+            hex: string;
+            rgb: number[];
+            hsl: number[];
+            alpha: {
+                hex: string;
+                rgb: number[];
+                hsl: number[];
+            };
+        };
+    };
+    dawn: {
+        base: {
+            hex: string;
+            rgb: number[];
+            hsl: number[];
+        };
+        surface: {
+            hex: string;
+            rgb: number[];
+            hsl: number[];
+        };
+        overlay: {
+            hex: string;
+            rgb: number[];
+            hsl: number[];
+        };
+        muted: {
+            hex: string;
+            rgb: number[];
+            hsl: number[];
+        };
+        subtle: {
+            hex: string;
+            rgb: number[];
+            hsl: number[];
+        };
+        text: {
+            hex: string;
+            rgb: number[];
+            hsl: number[];
+        };
+        love: {
+            hex: string;
+            rgb: number[];
+            hsl: number[];
+        };
+        gold: {
+            hex: string;
+            rgb: number[];
+            hsl: number[];
+        };
+        rose: {
+            hex: string;
+            rgb: number[];
+            hsl: number[];
+        };
+        pine: {
+            hex: string;
+            rgb: number[];
+            hsl: number[];
+        };
+        foam: {
+            hex: string;
+            rgb: number[];
+            hsl: number[];
+        };
+        iris: {
+            hex: string;
+            rgb: number[];
+            hsl: number[];
+        };
+        highlightLow: {
+            hex: string;
+            rgb: number[];
+            hsl: number[];
+            alpha: {
+                hex: string;
+                rgb: number[];
+                hsl: number[];
+            };
+        };
+        highlightMed: {
+            hex: string;
+            rgb: number[];
+            hsl: number[];
+            alpha: {
+                hex: string;
+                rgb: number[];
+                hsl: number[];
+            };
+        };
+        highlightHigh: {
+            hex: string;
+            rgb: number[];
+            hsl: number[];
+            alpha: {
+                hex: string;
+                rgb: number[];
+                hsl: number[];
+            };
+        };
+    };
+}, roles: {
+    base: {
+        main: {
+            hex: string;
+            rgb: number[];
+            hsl: number[];
+        };
+        moon: {
+            hex: string;
+            rgb: number[];
+            hsl: number[];
+        };
+        dawn: {
+            hex: string;
+            rgb: number[];
+            hsl: number[];
+        };
+    };
+    surface: {
+        main: {
+            hex: string;
+            rgb: number[];
+            hsl: number[];
+        };
+        moon: {
+            hex: string;
+            rgb: number[];
+            hsl: number[];
+        };
+        dawn: {
+            hex: string;
+            rgb: number[];
+            hsl: number[];
+        };
+    };
+    overlay: {
+        main: {
+            hex: string;
+            rgb: number[];
+            hsl: number[];
+        };
+        moon: {
+            hex: string;
+            rgb: number[];
+            hsl: number[];
+        };
+        dawn: {
+            hex: string;
+            rgb: number[];
+            hsl: number[];
+        };
+    };
+    muted: {
+        main: {
+            hex: string;
+            rgb: number[];
+            hsl: number[];
+        };
+        moon: {
+            hex: string;
+            rgb: number[];
+            hsl: number[];
+        };
+        dawn: {
+            hex: string;
+            rgb: number[];
+            hsl: number[];
+        };
+    };
+    subtle: {
+        main: {
+            hex: string;
+            rgb: number[];
+            hsl: number[];
+        };
+        moon: {
+            hex: string;
+            rgb: number[];
+            hsl: number[];
+        };
+        dawn: {
+            hex: string;
+            rgb: number[];
+            hsl: number[];
+        };
+    };
+    text: {
+        main: {
+            hex: string;
+            rgb: number[];
+            hsl: number[];
+        };
+        moon: {
+            hex: string;
+            rgb: number[];
+            hsl: number[];
+        };
+        dawn: {
+            hex: string;
+            rgb: number[];
+            hsl: number[];
+        };
+    };
+    love: {
+        main: {
+            hex: string;
+            rgb: number[];
+            hsl: number[];
+        };
+        moon: {
+            hex: string;
+            rgb: number[];
+            hsl: number[];
+        };
+        dawn: {
+            hex: string;
+            rgb: number[];
+            hsl: number[];
+        };
+    };
+    gold: {
+        main: {
+            hex: string;
+            rgb: number[];
+            hsl: number[];
+        };
+        moon: {
+            hex: string;
+            rgb: number[];
+            hsl: number[];
+        };
+        dawn: {
+            hex: string;
+            rgb: number[];
+            hsl: number[];
+        };
+    };
+    rose: {
+        main: {
+            hex: string;
+            rgb: number[];
+            hsl: number[];
+        };
+        moon: {
+            hex: string;
+            rgb: number[];
+            hsl: number[];
+        };
+        dawn: {
+            hex: string;
+            rgb: number[];
+            hsl: number[];
+        };
+    };
+    pine: {
+        main: {
+            hex: string;
+            rgb: number[];
+            hsl: number[];
+        };
+        moon: {
+            hex: string;
+            rgb: number[];
+            hsl: number[];
+        };
+        dawn: {
+            hex: string;
+            rgb: number[];
+            hsl: number[];
+        };
+    };
+    foam: {
+        main: {
+            hex: string;
+            rgb: number[];
+            hsl: number[];
+        };
+        moon: {
+            hex: string;
+            rgb: number[];
+            hsl: number[];
+        };
+        dawn: {
+            hex: string;
+            rgb: number[];
+            hsl: number[];
+        };
+    };
+    iris: {
+        main: {
+            hex: string;
+            rgb: number[];
+            hsl: number[];
+        };
+        moon: {
+            hex: string;
+            rgb: number[];
+            hsl: number[];
+        };
+        dawn: {
+            hex: string;
+            rgb: number[];
+            hsl: number[];
+        };
+    };
+    highlightLow: {
+        main: {
+            hex: string;
+            rgb: number[];
+            hsl: number[];
+            alpha: {
+                hex: string;
+                rgb: number[];
+                hsl: number[];
+            };
+        };
+        moon: {
+            hex: string;
+            rgb: number[];
+            hsl: number[];
+            alpha: {
+                hex: string;
+                rgb: number[];
+                hsl: number[];
+            };
+        };
+        dawn: {
+            hex: string;
+            rgb: number[];
+            hsl: number[];
+            alpha: {
+                hex: string;
+                rgb: number[];
+                hsl: number[];
+            };
+        };
+    };
+    highlightMed: {
+        main: {
+            hex: string;
+            rgb: number[];
+            hsl: number[];
+            alpha: {
+                hex: string;
+                rgb: number[];
+                hsl: number[];
+            };
+        };
+        moon: {
+            hex: string;
+            rgb: number[];
+            hsl: number[];
+            alpha: {
+                hex: string;
+                rgb: number[];
+                hsl: number[];
+            };
+        };
+        dawn: {
+            hex: string;
+            rgb: number[];
+            hsl: number[];
+            alpha: {
+                hex: string;
+                rgb: number[];
+                hsl: number[];
+            };
+        };
+    };
+    highlightHigh: {
+        main: {
+            hex: string;
+            rgb: number[];
+            hsl: number[];
+            alpha: {
+                hex: string;
+                rgb: number[];
+                hsl: number[];
+            };
+        };
+        moon: {
+            hex: string;
+            rgb: number[];
+            hsl: number[];
+            alpha: {
+                hex: string;
+                rgb: number[];
+                hsl: number[];
+            };
+        };
+        dawn: {
+            hex: string;
+            rgb: number[];
+            hsl: number[];
+            alpha: {
+                hex: string;
+                rgb: number[];
+                hsl: number[];
+            };
+        };
+    };
+};
 export default palette;
-
-export type Color = {
-	/**
-	 * Formatted hex value
-	 * @example #ebbcba
-	 */
-	hex: string;
-	/**
-	 * Formatted rgb value
-	 * @example [235, 188, 186]
-	 */
-	rgb: number[];
-	/**
-	 * Formatted hsl value
-	 * @example [2, 55, 83]
-	 */
-	hsl: number[];
-};
-
-export type AlphaColor = {
-	alpha: Color;
-} & Color;
-
-export type Roles<T, U> = {
-	/**
-	 * Background
-	 * - Primary background
-	 */
-	base: T;
-	/**
-	 * Background
-	 * - Elements directly atop {@link Roles.base }
-	 */
-	surface: T;
-	/**
-	 * Background
-	 * - Elements directly atop {@link Roles.surface}
-	 */
-	overlay: T;
-	/**
-	 * Foreground
-	 * - Low-contrast elements
-	 * - Ignored git folders
-	 */
-	muted: T;
-	/**
-	 * Foreground
-	 * - Mid-contrast elements
-	 * - Comments, punctuation, etc.
-	 */
-	subtle: T;
-	/**
-	 * Foreground
-	 * - High-contrast elements
-	 * - Text, variables, etc.
-	 */
-	text: T;
-	love: T;
-	gold: T;
-	rose: T;
-	pine: T;
-	foam: T;
-	iris: T;
-	/**
-	 * Highlight background
-	 * - Low-contrast selection
-	 */
-	highlightLow: U;
-	/**
-	 * Highlight background
-	 * - Mid-contrast selection
-	 */
-	highlightMed: U;
-	/**
-	 * Highlight background
-	 * - High-contrast selection
-	 */
-	highlightHigh: U;
-};
-
-export type Variants<T> = {
-	/**
-	 * Low-contrast dark variant
-	 */
-	main: T;
-	/**
-	 * Mid-contrast dark variant
-	 */
-	moon: T;
-	/**
-	 * Mid-contrast light variant
-	 */
-	dawn: T;
-};
-
-declare namespace palette {
-	/**
-	 * Palette variants
-	 */
-	const variants: Variants<Roles<Color, AlphaColor>>;
-	/**
-	 * Palette roles
-	 */
-	const roles: Roles<Variants<Color>, Variants<Color>>;
-}
