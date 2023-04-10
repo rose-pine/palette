@@ -1,3 +1,4 @@
+const objectKeys = Object.keys;
 const main = {
     base: { hex: "191724", rgb: [25, 23, 36], hsl: [249, 22, 12] },
     surface: { hex: "1f1d2e", rgb: [31, 29, 46], hsl: [247, 23, 15] },
@@ -130,47 +131,137 @@ const dawn = {
         },
     },
 };
-const palette = {
-    variants: { main, moon, dawn },
-    roles: {
-        base: { main: main.base, moon: moon.base, dawn: dawn.base },
-        surface: { main: main.surface, moon: moon.surface, dawn: dawn.surface },
-        overlay: { main: main.overlay, moon: moon.overlay, dawn: dawn.overlay },
-        muted: { main: main.muted, moon: moon.muted, dawn: dawn.muted },
-        subtle: { main: main.subtle, moon: moon.subtle, dawn: dawn.subtle },
-        text: { main: main.text, moon: moon.text, dawn: dawn.text },
-        love: { main: main.love, moon: moon.love, dawn: dawn.love },
-        gold: { main: main.gold, moon: moon.gold, dawn: dawn.gold },
-        rose: { main: main.rose, moon: moon.rose, dawn: dawn.rose },
-        pine: { main: main.pine, moon: moon.pine, dawn: dawn.pine },
-        foam: { main: main.foam, moon: moon.foam, dawn: dawn.foam },
-        iris: { main: main.iris, moon: moon.iris, dawn: dawn.iris },
-        highlightLow: {
-            main: main.highlightLow,
-            moon: moon.highlightLow,
-            dawn: dawn.highlightLow,
-        },
-        highlightMed: {
-            main: main.highlightMed,
-            moon: moon.highlightMed,
-            dawn: dawn.highlightMed,
-        },
-        highlightHigh: {
-            main: main.highlightHigh,
-            moon: moon.highlightHigh,
-            dawn: dawn.highlightHigh,
-        },
+const variantColors = { main, moon, dawn };
+const roleColors = {
+    base: { main: main.base, moon: moon.base, dawn: dawn.base },
+    surface: { main: main.surface, moon: moon.surface, dawn: dawn.surface },
+    overlay: { main: main.overlay, moon: moon.overlay, dawn: dawn.overlay },
+    muted: { main: main.muted, moon: moon.muted, dawn: dawn.muted },
+    subtle: { main: main.subtle, moon: moon.subtle, dawn: dawn.subtle },
+    text: { main: main.text, moon: moon.text, dawn: dawn.text },
+    love: { main: main.love, moon: moon.love, dawn: dawn.love },
+    gold: { main: main.gold, moon: moon.gold, dawn: dawn.gold },
+    rose: { main: main.rose, moon: moon.rose, dawn: dawn.rose },
+    pine: { main: main.pine, moon: moon.pine, dawn: dawn.pine },
+    foam: { main: main.foam, moon: moon.foam, dawn: dawn.foam },
+    iris: { main: main.iris, moon: moon.iris, dawn: dawn.iris },
+    highlightLow: {
+        main: main.highlightLow,
+        moon: moon.highlightLow,
+        dawn: dawn.highlightLow,
+    },
+    highlightMed: {
+        main: main.highlightMed,
+        moon: moon.highlightMed,
+        dawn: dawn.highlightMed,
+    },
+    highlightHigh: {
+        main: main.highlightHigh,
+        moon: moon.highlightHigh,
+        dawn: dawn.highlightHigh,
     },
 };
-const objectKeys = Object.keys;
-const uppercaseFirstCharacter = (word) => word.charAt(0).toUpperCase() + word.slice(1);
-const variantIds = objectKeys(palette.variants);
-const variantNames = ["Rosé Pine", "Rolé Pine Moon", "Rosé Pine Dawn"];
-const roleIds = objectKeys(palette.roles);
-const roleNames = roleIds.map((role) => role
-    .split("-")
-    .map((word) => uppercaseFirstCharacter(word))
-    .join(" "));
-export { variantIds, variantNames, roleIds, roleNames };
-export const { variants, roles } = palette;
-export default palette;
+const variants = {
+    main: {
+        id: "rose-pine",
+        key: "main",
+        name: "Rosé Pine",
+        colors: main,
+    },
+    moon: {
+        id: "rose-pine-moon",
+        key: "moon",
+        name: "Rosé Pine Moon",
+        colors: moon,
+    },
+    dawn: {
+        id: "rose-pine-dawn",
+        key: "dawn",
+        name: "Rosé Pine Dawn",
+        colors: dawn,
+    },
+};
+const roles = {
+    base: { id: "base", key: "base", name: "Base", colors: roleColors.base },
+    surface: {
+        id: "surface",
+        key: "surface",
+        name: "Surface",
+        colors: roleColors.surface,
+    },
+    overlay: {
+        id: "overlay",
+        key: "overlay",
+        name: "Overlay",
+        colors: roleColors.overlay,
+    },
+    muted: {
+        id: "muted",
+        key: "muted",
+        name: "Muted",
+        colors: roleColors.muted,
+    },
+    subtle: {
+        id: "subtle",
+        key: "subtle",
+        name: "Subtle",
+        colors: roleColors.subtle,
+    },
+    text: { id: "text", key: "text", name: "Text", colors: roleColors.text },
+    love: { id: "love", key: "love", name: "Love", colors: roleColors.love },
+    gold: { id: "gold", key: "gold", name: "Gold", colors: roleColors.gold },
+    rose: { id: "rose", key: "rose", name: "Rose", colors: roleColors.rose },
+    pine: { id: "pine", key: "pine", name: "Pine", colors: roleColors.pine },
+    foam: { id: "foam", key: "foam", name: "Foam", colors: roleColors.foam },
+    iris: { id: "iris", key: "iris", name: "Iris", colors: roleColors.iris },
+    highlightLow: {
+        id: "highlight-low",
+        key: "highlightLow",
+        name: "Highlight Low",
+        colors: roleColors.highlightLow,
+    },
+    highlightMed: {
+        id: "highlight-med",
+        key: "highlightMed",
+        name: "Highlight Med",
+        colors: roleColors.highlightMed,
+    },
+    highlightHigh: {
+        id: "highlight-high",
+        key: "highlightHigh",
+        name: "Highlight High",
+        colors: roleColors.highlightHigh,
+    },
+};
+const variantKeys = objectKeys(variants);
+const variantIds = ["rose-pine", "rose-pine-moon", "rose-pine-dawn"];
+const variantNames = ["Rosé Pine", "Rosé Pine Moon", "Rosé Pine Dawn"];
+const roleKeys = objectKeys(roles);
+const roleIds = roleKeys.map((role) => {
+    if (role === "highlightLow")
+        return "highlight-low";
+    if (role === "highlightMed")
+        return "highlight-med";
+    if (role === "highlightHigh")
+        return "highlight-high";
+    return role;
+});
+const roleNames = [
+    "Base",
+    "Surface",
+    "Overlay",
+    "Muted",
+    "Subtle",
+    "Text",
+    "Love",
+    "Gold",
+    "Rose",
+    "Pine",
+    "Foam",
+    "Iris",
+    "Highlight Low",
+    "Highlight Med",
+    "Highlight High",
+];
+const colorFormats = ["hex", "rgb", "hsl"];
+export { variants, variantIds, variantKeys, variantNames, variantColors, roles, roleIds, roleKeys, roleNames, roleColors, colorFormats, };
