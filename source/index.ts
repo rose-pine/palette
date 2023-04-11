@@ -244,8 +244,16 @@ const roles = {
 };
 
 const variantKeys = objectKeys(variants);
-const variantIds = ["rose-pine", "rose-pine-moon", "rose-pine-dawn"] as const;
-const variantNames = ["Rosé Pine", "Rosé Pine Moon", "Rosé Pine Dawn"] as const;
+const variantIds: ["rose-pine", "rose-pine-moon", "rose-pine-dawn"] = [
+	"rose-pine",
+	"rose-pine-moon",
+	"rose-pine-dawn",
+];
+const variantNames: ["Rosé Pine", "Rosé Pine Moon", "Rosé Pine Dawn"] = [
+	"Rosé Pine",
+	"Rosé Pine Moon",
+	"Rosé Pine Dawn",
+];
 
 const roleKeys = objectKeys(roles);
 const roleIds = roleKeys.map((role) => {
@@ -254,7 +262,23 @@ const roleIds = roleKeys.map((role) => {
 	if (role === "highlightHigh") return "highlight-high";
 	return role;
 });
-const roleNames = [
+const roleNames: [
+	"Base",
+	"Surface",
+	"Overlay",
+	"Muted",
+	"Subtle",
+	"Text",
+	"Love",
+	"Gold",
+	"Rose",
+	"Pine",
+	"Foam",
+	"Iris",
+	"Highlight Low",
+	"Highlight Med",
+	"Highlight High"
+] = [
 	"Base",
 	"Surface",
 	"Overlay",
@@ -270,9 +294,9 @@ const roleNames = [
 	"Highlight Low",
 	"Highlight Med",
 	"Highlight High",
-] as const;
+];
 
-const colorFormats = ["hex", "rgb", "hsl"] as const;
+const colorFormats: ["hex", "rgb", "hsl"] = ["hex", "rgb", "hsl"];
 
 export type Variant = typeof variants.main;
 export type VariantColors = Variant["colors"];

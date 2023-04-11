@@ -234,8 +234,16 @@ const roles = {
     },
 };
 const variantKeys = objectKeys(variants);
-const variantIds = ["rose-pine", "rose-pine-moon", "rose-pine-dawn"];
-const variantNames = ["Rosé Pine", "Rosé Pine Moon", "Rosé Pine Dawn"];
+const variantIds = [
+    "rose-pine",
+    "rose-pine-moon",
+    "rose-pine-dawn",
+];
+const variantNames = [
+    "Rosé Pine",
+    "Rosé Pine Moon",
+    "Rosé Pine Dawn",
+];
 const roleKeys = objectKeys(roles);
 const roleIds = roleKeys.map((role) => {
     if (role === "highlightLow")

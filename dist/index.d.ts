@@ -1249,12 +1249,28 @@ declare const roles: {
     };
 };
 declare const variantKeys: ("main" | "moon" | "dawn")[];
-declare const variantIds: readonly ["rose-pine", "rose-pine-moon", "rose-pine-dawn"];
-declare const variantNames: readonly ["Rosé Pine", "Rosé Pine Moon", "Rosé Pine Dawn"];
+declare const variantIds: ["rose-pine", "rose-pine-moon", "rose-pine-dawn"];
+declare const variantNames: ["Rosé Pine", "Rosé Pine Moon", "Rosé Pine Dawn"];
 declare const roleKeys: ("base" | "surface" | "overlay" | "muted" | "subtle" | "text" | "love" | "gold" | "rose" | "pine" | "foam" | "iris" | "highlightLow" | "highlightMed" | "highlightHigh")[];
 declare const roleIds: ("base" | "surface" | "overlay" | "muted" | "subtle" | "text" | "love" | "gold" | "rose" | "pine" | "foam" | "iris" | "highlight-low" | "highlight-med" | "highlight-high")[];
-declare const roleNames: readonly ["Base", "Surface", "Overlay", "Muted", "Subtle", "Text", "Love", "Gold", "Rose", "Pine", "Foam", "Iris", "Highlight Low", "Highlight Med", "Highlight High"];
-declare const colorFormats: readonly ["hex", "rgb", "hsl"];
+declare const roleNames: [
+    "Base",
+    "Surface",
+    "Overlay",
+    "Muted",
+    "Subtle",
+    "Text",
+    "Love",
+    "Gold",
+    "Rose",
+    "Pine",
+    "Foam",
+    "Iris",
+    "Highlight Low",
+    "Highlight Med",
+    "Highlight High"
+];
+declare const colorFormats: ["hex", "rgb", "hsl"];
 export type Variant = typeof variants.main;
 export type VariantColors = Variant["colors"];
 export type Role = typeof roles.base;
