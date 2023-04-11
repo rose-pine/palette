@@ -1255,4 +1255,9 @@ declare const roleKeys: ("base" | "surface" | "overlay" | "muted" | "subtle" | "
 declare const roleIds: ("base" | "surface" | "overlay" | "muted" | "subtle" | "text" | "love" | "gold" | "rose" | "pine" | "foam" | "iris" | "highlight-low" | "highlight-med" | "highlight-high")[];
 declare const roleNames: readonly ["Base", "Surface", "Overlay", "Muted", "Subtle", "Text", "Love", "Gold", "Rose", "Pine", "Foam", "Iris", "Highlight Low", "Highlight Med", "Highlight High"];
 declare const colorFormats: readonly ["hex", "rgb", "hsl"];
+export type Variant = typeof variants.main;
+export type VariantColors = Variant["colors"];
+export type Role = typeof roles.base;
+export type RoleColors = Role["colors"];
+export type Color = RoleColors["main"];
 export { variants, variantIds, variantKeys, variantNames, variantColors, roles, roleIds, roleKeys, roleNames, roleColors, colorFormats, };

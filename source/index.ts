@@ -274,6 +274,12 @@ const roleNames = [
 
 const colorFormats = ["hex", "rgb", "hsl"] as const;
 
+export type Variant = typeof variants.main;
+export type VariantColors = Variant["colors"];
+export type Role = typeof roles.base;
+export type RoleColors = Role["colors"];
+export type Color = RoleColors["main"];
+
 export {
 	variants,
 	variantIds,
