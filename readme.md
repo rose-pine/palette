@@ -13,44 +13,134 @@
 
 > Color palette tool for Rosé Pine
 
-## Install
-
-```sh
-npm install @rose-pine/palette
-```
+- [Usage](#usage)
+  - [CSS variables](#css-variables)
+  - [Tailwind CSS](#tailwind-css)
+  - [JavaScript](#javascript)
+- [Specification](#specification)
+  - [Variants](#variants)
+  - [Roles](#roles)
+- [Related](#related)
 
 ## Usage
 
-**js**
+### CSS variables
 
-```js
-import {variants, roles} from '@rose-pine/palette'
+**Media**
 
-roles.base.main.hex
-// => '#191724'
+> See `dist/css/rose-pine-media{-rgb,-hsl}.css`
 
-roles.surface.dawn.rgb
-// => 'rgb(255, 250, 243)'
+Useful for light/dark theming. Values follow the user's system theme, using
+the dawn variant when light and main variant when dark. Moon values can be
+uncommented and used instead.
 
-variants.moon.highlightLow.hsl
-// => 'hsl(245, 22%, 20%)'
+**Classes**
 
-variants.moon.highlightLow.alpha.hsl
-// => 'hsla(249, 14%, 55%, 0.08)'
-```
+> See `dist/css/rose-pine-class{-rgb,-hsl}.css`
 
-**css**
+Useful for theming with more than two options. Values are set based on a
+wrapping class of `.theme-rp{-moon,-dawn}`.
 
 ```css
-@import url('https://unpkg.com/@rose-pine/palette@3.0.1/css/rose-pine.css');
-
 body {
-	color: var(--rp-main-text);
-	background: var(--rp-main-base);
+	color: var(--rp-text);
+	background: var(--rp-base);
 }
 ```
 
-## Palette
+**Static**
+
+> See `dist/css/rose-pine{-rgb,-hsl}.css`
+
+Useful when flexibility is desired. Values include their variant's name for moon and
+dawn, allowing all variants to be individually referenced.
+
+```css
+.link-main {
+	color: var(--rp-iris);
+}
+.link-moon {
+	color: var(--rp-moon-iris);
+}
+.link-dawn {
+	color: var(--rp-dawn-iris);
+}
+```
+
+### Tailwind CSS
+
+**Preset configuration**
+
+> See `dist/tailwind/rose-pine{-media}.js`
+
+```js
+// tailwind.config.js
+module.exports = {
+	presets: [require("./rose-pine.js")],
+};
+```
+
+If using `rose-pine-media.js`, see the section below to include the necessary
+CSS variables.
+
+**CSS variables**
+
+> See `dist/css/rose-pine-media-tailwind.css`
+
+This method sets CSS variables to raw HSL values to support alpha values in
+classes, e.g. `bg-rose/50`.
+
+### JavaScript
+
+Starting with v4, colour values are unformatted. Formatted values can be found
+in our `dist` folder. For creating new themes, it is recommended to use our
+[build tool](https://github.com/rose-pine/build).
+
+```js
+import {variants, roles} from "@rose-pine/palette";
+
+variants.moon.colors.highlightLow.hsl;
+// => [245, 22, 20]
+
+variants.moon.colors.highlightLow.alpha.hsl;
+// => [249, 14%, 55%, 0.08]
+
+variants.main.id;
+// => rose-pine
+
+variants.moon.key;
+// => moon
+
+variants.dawn.name;
+// => Rosé Pine Dawn
+
+roles.base.colors.main.hex;
+// => '191724'
+
+roles.surface.colors.dawn.rgb;
+// => [255, 250, 243]
+
+roles.highlightLow.id;
+// => highlight-low
+
+roles.highlightMed.key;
+// => highlightMed
+
+roles.highlightHigh.key;
+// => Highlight High
+```
+
+## Specification
+
+### Variants
+
+Rosé Pine includes three variants. These are referenced as Rosé Pine, Rosé
+Pine Moon, and Rosé Pine Dawn. Their codenames are main, moon, and dawn
+respectively. Naming does not include "main" unless necessary. When used as
+file names, prefer snake-case. E.g. rose-pine, rose-pine-moon, and
+rose-pine-dawn.
+
+### Roles
 
 **Neutral**
 
@@ -76,3 +166,8 @@ body {
 | `pine` | terminal green, functions, git rename                            |
 | `foam` | terminal blue, object keys, info, git add                        |
 | `iris` | terminal magenta, parameters, links, hints, git merge, git stage |
+
+## Related
+
+- [rosepinetheme.com/palette](https://rosepinetheme.com/palette)
+- [@rose-pine/build](https://github.com/rose-pine/build)

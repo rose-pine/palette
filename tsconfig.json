@@ -1,0 +1,7 @@
+{
+	"extends": "@mvllow/tsconfig",
+	"compilerOptions": {
+		"outDir": "dist"
+	},
+	"include": ["source"]
+}

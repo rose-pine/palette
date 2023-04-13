@@ -1,0 +1,53 @@
+.theme-rp {
+	--rp-base: hsl(249deg, 22%, 12%);
+	--rp-surface: hsl(247deg, 23%, 15%);
+	--rp-overlay: hsl(248deg, 25%, 18%);
+	--rp-muted: hsl(249deg, 12%, 47%);
+	--rp-subtle: hsl(248deg, 15%, 61%);
+	--rp-text: hsl(245deg, 50%, 91%);
+	--rp-love: hsl(343deg, 76%, 68%);
+	--rp-gold: hsl(35deg, 88%, 72%);
+	--rp-rose: hsl(2deg, 55%, 83%);
+	--rp-pine: hsl(197deg, 49%, 38%);
+	--rp-foam: hsl(189deg, 43%, 73%);
+	--rp-iris: hsl(267deg, 57%, 78%);
+	--rp-highlight-low: hsl(244deg, 18%, 15%);
+	--rp-highlight-med: hsl(249deg, 15%, 28%);
+	--rp-highlight-high: hsl(248deg, 13%, 36%);
+}
+
+.theme-rp-moon {
+	--rp-base: hsl(246deg, 24%, 17%);
+	--rp-surface: hsl(248deg, 24%, 20%);
+	--rp-overlay: hsl(248deg, 21%, 26%);
+	--rp-muted: hsl(249deg, 12%, 47%);
+	--rp-subtle: hsl(248deg, 15%, 61%);
+	--rp-text: hsl(245deg, 50%, 91%);
+	--rp-love: hsl(343deg, 76%, 68%);
+	--rp-gold: hsl(35deg, 88%, 72%);
+	--rp-rose: hsl(2deg, 66%, 75%);
+	--rp-pine: hsl(197deg, 48%, 47%);
+	--rp-foam: hsl(189deg, 43%, 73%);
+	--rp-iris: hsl(267deg, 57%, 78%);
+	--rp-highlight-low: hsl(245deg, 22%, 20%);
+	--rp-highlight-med: hsl(247deg, 16%, 30%);
+	--rp-highlight-high: hsl(249deg, 15%, 38%);
+}
+
+.theme-rp-dawn {
+	--rp-base: hsl(32deg, 57%, 95%);
+	--rp-surface: hsl(35deg, 100%, 98%);
+	--rp-overlay: hsl(33deg, 43%, 91%);
+	--rp-muted: hsl(257deg, 9%, 61%);
+	--rp-subtle: hsl(248deg, 12%, 52%);
+	--rp-text: hsl(248deg, 19%, 40%);
+	--rp-love: hsl(343deg, 35%, 55%);
+	--rp-gold: hsl(35deg, 81%, 56%);
+	--rp-rose: hsl(3deg, 53%, 67%);
+	--rp-pine: hsl(197deg, 53%, 34%);
+	--rp-foam: hsl(189deg, 30%, 48%);
+	--rp-iris: hsl(268deg, 21%, 57%);
+	--rp-highlight-low: hsl(25deg, 35%, 93%);
+	--rp-highlight-med: hsl(10deg, 9%, 86%);
+	--rp-highlight-high: hsl(315deg, 4%, 80%);
+}
