@@ -1,6 +1,6 @@
 {
 	"name": "@rose-pine/palette",
-	"version": "4.0.1-5",
+	"version": "4.0.1",
 	"description": "Color palette tool for Rosé Pine",
 	"license": "MIT",
 	"repository": "rose-pine/palette",
